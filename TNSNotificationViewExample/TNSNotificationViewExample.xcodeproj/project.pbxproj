@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61917DCB2034013C003FA60C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61917DCA2034013C003FA60C /* AppDelegate.swift */; };
+		61917DCD2034013C003FA60C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61917DCC2034013C003FA60C /* ViewController.swift */; };
+		61917DD02034013C003FA60C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61917DCE2034013C003FA60C /* Main.storyboard */; };
+		61917DD22034013C003FA60C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61917DD12034013C003FA60C /* Assets.xcassets */; };
+		61917DD52034013C003FA60C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61917DD32034013C003FA60C /* LaunchScreen.storyboard */; };
+		61917DE02034013C003FA60C /* TNSNotificationViewExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61917DDF2034013C003FA60C /* TNSNotificationViewExampleTests.swift */; };
+		61917DF620340162003FA60C /* TNSNotificationBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61917DF720340162003FA60C /* TNSNotificationBar.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61917DDC2034013C003FA60C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61917DBF2034013B003FA60C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61917DC62034013C003FA60C;
+			remoteInfo = TNSNotificationViewExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		61917DC72034013C003FA60C /* TNSNotificationViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TNSNotificationViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61917DCA2034013C003FA60C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61917DCC2034013C003FA60C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		61917DCF2034013C003FA60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61917DD12034013C003FA60C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61917DD42034013C003FA60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		61917DD62034013C003FA60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61917DDB2034013C003FA60C /* TNSNotificationViewExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TNSNotificationViewExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61917DDF2034013C003FA60C /* TNSNotificationViewExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TNSNotificationViewExampleTests.swift; sourceTree = "<group>"; };
+		61917DE12034013C003FA60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61917DF520340146003FA60C /* TNSNotificationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TNSNotificationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61917DF720340162003FA60C /* TNSNotificationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TNSNotificationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61917DC42034013C003FA60C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61917DF620340162003FA60C /* TNSNotificationBar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61917DD82034013C003FA60C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61917DBE2034013B003FA60C = {
+			isa = PBXGroup;
+			children = (
+				61917DC92034013C003FA60C /* TNSNotificationViewExample */,
+				61917DDE2034013C003FA60C /* TNSNotificationViewExampleTests */,
+				61917DC82034013C003FA60C /* Products */,
+				61917DF320340146003FA60C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		61917DC82034013C003FA60C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61917DC72034013C003FA60C /* TNSNotificationViewExample.app */,
+				61917DDB2034013C003FA60C /* TNSNotificationViewExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61917DC92034013C003FA60C /* TNSNotificationViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				61917DCA2034013C003FA60C /* AppDelegate.swift */,
+				61917DCC2034013C003FA60C /* ViewController.swift */,
+				61917DCE2034013C003FA60C /* Main.storyboard */,
+				61917DD12034013C003FA60C /* Assets.xcassets */,
+				61917DD32034013C003FA60C /* LaunchScreen.storyboard */,
+				61917DD62034013C003FA60C /* Info.plist */,
+			);
+			path = TNSNotificationViewExample;
+			sourceTree = "<group>";
+		};
+		61917DDE2034013C003FA60C /* TNSNotificationViewExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				61917DDF2034013C003FA60C /* TNSNotificationViewExampleTests.swift */,
+				61917DE12034013C003FA60C /* Info.plist */,
+			);
+			path = TNSNotificationViewExampleTests;
+			sourceTree = "<group>";
+		};
+		61917DF320340146003FA60C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61917DF720340162003FA60C /* TNSNotificationBar.framework */,
+				61917DF520340146003FA60C /* TNSNotificationBar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61917DC62034013C003FA60C /* TNSNotificationViewExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61917DE42034013C003FA60C /* Build configuration list for PBXNativeTarget "TNSNotificationViewExample" */;
+			buildPhases = (
+				61917DC32034013C003FA60C /* Sources */,
+				61917DC42034013C003FA60C /* Frameworks */,
+				61917DC52034013C003FA60C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TNSNotificationViewExample;
+			productName = TNSNotificationViewExample;
+			productReference = 61917DC72034013C003FA60C /* TNSNotificationViewExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61917DDA2034013C003FA60C /* TNSNotificationViewExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61917DE72034013C003FA60C /* Build configuration list for PBXNativeTarget "TNSNotificationViewExampleTests" */;
+			buildPhases = (
+				61917DD72034013C003FA60C /* Sources */,
+				61917DD82034013C003FA60C /* Frameworks */,
+				61917DD92034013C003FA60C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61917DDD2034013C003FA60C /* PBXTargetDependency */,
+			);
+			name = TNSNotificationViewExampleTests;
+			productName = TNSNotificationViewExampleTests;
+			productReference = 61917DDB2034013C003FA60C /* TNSNotificationViewExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61917DBF2034013B003FA60C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "棚瀨 隆太";
+				TargetAttributes = {
+					61917DC62034013C003FA60C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					61917DDA2034013C003FA60C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 61917DC62034013C003FA60C;
+					};
+				};
+			};
+			buildConfigurationList = 61917DC22034013B003FA60C /* Build configuration list for PBXProject "TNSNotificationViewExample" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61917DBE2034013B003FA60C;
+			productRefGroup = 61917DC82034013C003FA60C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61917DC62034013C003FA60C /* TNSNotificationViewExample */,
+				61917DDA2034013C003FA60C /* TNSNotificationViewExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61917DC52034013C003FA60C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61917DD52034013C003FA60C /* LaunchScreen.storyboard in Resources */,
+				61917DD22034013C003FA60C /* Assets.xcassets in Resources */,
+				61917DD02034013C003FA60C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61917DD92034013C003FA60C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61917DC32034013C003FA60C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61917DCD2034013C003FA60C /* ViewController.swift in Sources */,
+				61917DCB2034013C003FA60C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61917DD72034013C003FA60C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61917DE02034013C003FA60C /* TNSNotificationViewExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61917DDD2034013C003FA60C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61917DC62034013C003FA60C /* TNSNotificationViewExample */;
+			targetProxy = 61917DDC2034013C003FA60C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		61917DCE2034013C003FA60C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61917DCF2034013C003FA60C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		61917DD32034013C003FA60C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61917DD42034013C003FA60C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61917DE22034013C003FA60C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		61917DE32034013C003FA60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61917DE52034013C003FA60C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TNSNotificationViewExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryutatanase.TNSNotificationViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61917DE62034013C003FA60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TNSNotificationViewExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryutatanase.TNSNotificationViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		61917DE82034013C003FA60C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TNSNotificationViewExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryutatanase.TNSNotificationViewExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TNSNotificationViewExample.app/TNSNotificationViewExample";
+			};
+			name = Debug;
+		};
+		61917DE92034013C003FA60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TNSNotificationViewExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryutatanase.TNSNotificationViewExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TNSNotificationViewExample.app/TNSNotificationViewExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61917DC22034013B003FA60C /* Build configuration list for PBXProject "TNSNotificationViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61917DE22034013C003FA60C /* Debug */,
+				61917DE32034013C003FA60C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61917DE42034013C003FA60C /* Build configuration list for PBXNativeTarget "TNSNotificationViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61917DE52034013C003FA60C /* Debug */,
+				61917DE62034013C003FA60C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61917DE72034013C003FA60C /* Build configuration list for PBXNativeTarget "TNSNotificationViewExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61917DE82034013C003FA60C /* Debug */,
+				61917DE92034013C003FA60C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61917DBF2034013B003FA60C /* Project object */;
+}

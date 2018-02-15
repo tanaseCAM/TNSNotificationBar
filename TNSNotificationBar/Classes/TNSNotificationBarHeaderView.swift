@@ -36,6 +36,15 @@ class TNSNotificationBarHeaderView: UIView {
         return view
     }()
     
+    private let messageLabel: UILabel = {
+        let view = UILabel(frame: .zero)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.textColor = .white
+        view.adjustsFontSizeToFitWidth = true
+        view.text = "●●さんからメッセージが届きました。"
+        return view
+    }()
+    
     override public init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -46,6 +55,7 @@ class TNSNotificationBarHeaderView: UIView {
     }
     
     private func setup() {
+        messageAreaView.addSubview(messageLabel)
         containerView.addArrangedSubview(messageAreaView)
         containerView.addArrangedSubview(buttonAreaView)
         addSubview(containerView)
@@ -53,12 +63,16 @@ class TNSNotificationBarHeaderView: UIView {
             containerView.topAnchor.constraint(equalTo: topAnchor),
             containerView.leadingAnchor.constraint(equalTo: leadingAnchor),
             containerView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            containerView.heightAnchor.constraint(equalToConstant: 50),
+            containerView.heightAnchor.constraint(equalToConstant: 70),
             
             messageAreaView.widthAnchor.constraint(equalToConstant: 200),
-            messageAreaView.heightAnchor.constraint(equalToConstant: 40),
+            messageAreaView.heightAnchor.constraint(equalToConstant: 50),
             buttonAreaView.widthAnchor.constraint(equalToConstant: 60),
-            buttonAreaView.heightAnchor.constraint(equalToConstant: 40)
+            buttonAreaView.heightAnchor.constraint(equalToConstant: 50),
+            
+            messageLabel.leadingAnchor.constraint(equalTo: messageAreaView.leadingAnchor, constant: 20),
+            messageLabel.trailingAnchor.constraint(equalTo: messageAreaView.trailingAnchor, constant: 20),
+            messageLabel.centerYAnchor.constraint(equalTo: messageAreaView.centerYAnchor)
         ])
     }
     

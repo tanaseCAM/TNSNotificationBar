@@ -11,30 +11,37 @@ import TNSNotificationBar
 
 class ViewController: UIViewController {
     
-    let notificationBar: TNSNotificationBar = {
-        let view = TNSNotificationBar(frame: .zero)
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
+    let button: UIButton = {
+        let button = UIButton(frame: .zero)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(ViewController.tappedButton), for: .touchUpInside)
+        button.backgroundColor = .lightGray
+        button.setTitle("show", for: .normal)
+        return button
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        view.addSubview(notificationBar)
+        view.addSubview(button)
         NSLayoutConstraint.activate ([
-            notificationBar.topAnchor.constraint(equalTo: view.topAnchor),
-            notificationBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            notificationBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            notificationBar.heightAnchor.constraint(equalToConstant: 50)
+            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            button.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20),
+            button.heightAnchor.constraint(equalToConstant: 30),
+            button.widthAnchor.constraint(equalToConstant: 60)
         ])
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(1.0 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)) {
+            self.view.makeNotificationBar()
+        }
     }
-
+    
+    @objc func tappedButton() {
+        self.view.makeNotificationBar()
+    }
 
 }
 

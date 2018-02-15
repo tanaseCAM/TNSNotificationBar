@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		616C39E32035697A00066B51 /* TNSNotificationBar.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 61917DF720340162003FA60C /* TNSNotificationBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		61917DCB2034013C003FA60C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61917DCA2034013C003FA60C /* AppDelegate.swift */; };
 		61917DCD2034013C003FA60C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61917DCC2034013C003FA60C /* ViewController.swift */; };
 		61917DD02034013C003FA60C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61917DCE2034013C003FA60C /* Main.storyboard */; };
@@ -25,6 +26,19 @@
 			remoteInfo = TNSNotificationViewExample;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		616C39E22035696E00066B51 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				616C39E32035697A00066B51 /* TNSNotificationBar.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		61917DC72034013C003FA60C /* TNSNotificationViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TNSNotificationViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +134,7 @@
 				61917DC32034013C003FA60C /* Sources */,
 				61917DC42034013C003FA60C /* Frameworks */,
 				61917DC52034013C003FA60C /* Resources */,
+				616C39E22035696E00066B51 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -368,8 +383,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMGZX9RP66;
 				INFOPLIST_FILE = TNSNotificationViewExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INSTALL_PATH = "@rpath";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/../Frameworks/";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryutatanase.TNSNotificationViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -382,8 +400,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMGZX9RP66;
 				INFOPLIST_FILE = TNSNotificationViewExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INSTALL_PATH = "@rpath";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/../Frameworks/";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryutatanase.TNSNotificationViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -12,6 +12,7 @@
 		61917D412033DF88003FA60C /* TNSNotificationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61917D402033DF88003FA60C /* TNSNotificationBar.swift */; };
 		61917DF9203408CF003FA60C /* TNSNotificationBarBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61917DF8203408CF003FA60C /* TNSNotificationBarBodyView.swift */; };
 		61917DFB20340980003FA60C /* TNSNotificationBarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61917DFA20340980003FA60C /* TNSNotificationBarHeaderView.swift */; };
+		61968B3B2035218A008DFEBB /* TNSNotificationBar+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61968B3A2035218A008DFEBB /* TNSNotificationBar+UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		61917DEA2034013C003FA60C /* TNSNotificationViewExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TNSNotificationViewExample.xcodeproj; path = TNSNotificationViewExample/TNSNotificationViewExample.xcodeproj; sourceTree = "<group>"; };
 		61917DF8203408CF003FA60C /* TNSNotificationBarBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TNSNotificationBarBodyView.swift; sourceTree = "<group>"; };
 		61917DFA20340980003FA60C /* TNSNotificationBarHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TNSNotificationBarHeaderView.swift; sourceTree = "<group>"; };
+		61968B3A2035218A008DFEBB /* TNSNotificationBar+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TNSNotificationBar+UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				61917D402033DF88003FA60C /* TNSNotificationBar.swift */,
 				61917DF8203408CF003FA60C /* TNSNotificationBarBodyView.swift */,
 				61917DFA20340980003FA60C /* TNSNotificationBarHeaderView.swift */,
+				61968B3A2035218A008DFEBB /* TNSNotificationBar+UIView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				61917DF9203408CF003FA60C /* TNSNotificationBarBodyView.swift in Sources */,
 				61917D412033DF88003FA60C /* TNSNotificationBar.swift in Sources */,
 				61917DFB20340980003FA60C /* TNSNotificationBarHeaderView.swift in Sources */,
+				61968B3B2035218A008DFEBB /* TNSNotificationBar+UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

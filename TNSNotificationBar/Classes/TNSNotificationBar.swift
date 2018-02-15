@@ -8,7 +8,17 @@
 
 import UIKit
 
+private enum TNSNotificationBarState {
+    case stretched
+    case shrinked
+}
+
 public class TNSNotificationBar: UIView {
+    
+    fileprivate let defaultBarHeight: CGFloat = 70
+    fileprivate var initialPointY: CGFloat = 0
+    fileprivate var currentState: TNSNotificationBarState = .shrinked
+    var isAnimating = false
 
     // MARK: Properties
     var headerView: TNSNotificationBarHeaderView = {
@@ -33,7 +43,7 @@ public class TNSNotificationBar: UIView {
     }
     
     private func setup() {
-        backgroundColor = UIColor.black.withAlphaComponent(0.8)
+        backgroundColor = UIColor.black.withAlphaComponent(0.4)
         
         addSubview(headerView)
         addSubview(bodyView)
@@ -41,13 +51,128 @@ public class TNSNotificationBar: UIView {
             headerView.topAnchor.constraint(equalTo: topAnchor),
             headerView.leadingAnchor.constraint(equalTo: leadingAnchor),
             headerView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            headerView.heightAnchor.constraint(equalToConstant: 50),
+            headerView.heightAnchor.constraint(equalToConstant: 70),
             
             bodyView.topAnchor.constraint(equalTo: headerView.bottomAnchor),
             bodyView.leadingAnchor.constraint(equalTo: leadingAnchor),
             bodyView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            bodyView.heightAnchor.constraint(equalToConstant: 0)
+            bodyView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
     
+    private func stretch() {
+        isAnimating = true
+        UIView.animate(withDuration: 1.0, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, animations: {
+            self.frame.origin.y = 20
+            self.frame.size.height = 300
+        }) { _ in
+            self.isAnimating = false
+            self.currentState = .stretched
+        }
+    }
+    
+    private func shrink() {
+        isAnimating = true
+        UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.5, animations: {
+            self.frame.origin.y = 20
+            self.frame.size.height = self.defaultBarHeight
+        }) { _ in
+            self.isAnimating = false
+            self.currentState = .shrinked
+        }
+    }
+    
+    private func close() {
+        UIView.animate(withDuration: 0.3, animations: { () -> Void in
+            self.frame.origin.y = -70
+        }) { _ in
+            self.removeFromSuperview()
+        }
+    }
+    
+    private func returnInitialPosition() {
+        isAnimating = true
+        UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, animations: {
+            switch self.currentState {
+            case .shrinked:
+                self.frame.origin.y = 20
+                self.frame.size.height = self.defaultBarHeight
+            case .stretched:
+                self.frame.origin.y = 20
+                self.frame.size.height = 300
+            }
+        }) { _ in
+            self.isAnimating = false
+        }
+    }
+    
+}
+
+extension TNSNotificationBar {
+    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            let location = touch.location(in: self)
+            print("Began:(\(location.x), \(location.y))")
+            initialPointY = location.y
+        }
+    }
+    
+    override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            let location = touch.location(in: self)
+            print("Moved:(\(location.x), \(location.y))")
+            if isAnimating {
+                return
+            }
+            frame = CGRect(x: frame.origin.x, y: frame.origin.y + (location.y - initialPointY), width: frame.width, height: frame.height)
+            if frame.origin.y >= 100 {
+                stretch()
+            } else if frame.origin.y <= -20 {
+                switch currentState {
+                case .shrinked:
+                    break
+                case .stretched:
+                    shrink()
+                }
+            }
+        }
+    }
+    
+    override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            let location = touch.location(in: self)
+            print("Ended:(\(location.x), \(location.y))")
+//            if location.y >= defaultBarHeight {
+//                frame = CGRect(origin: frame.origin, size: CGSize(width: frame.width, height: location.y ))
+//            }
+            if isAnimating {
+                return
+            }
+            if frame.origin.y <= -20 {
+                switch currentState {
+                case .shrinked:
+                    close()
+                case .stretched:
+                    shrink()
+                }
+            } else {
+                returnInitialPosition()
+            }
+        }
+    }
+    
+    override public func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            let location = touch.location(in: self)
+            print("Ended:(\(location.x), \(location.y))")
+            if isAnimating {
+                return
+            }
+            if location.y >= defaultBarHeight {
+                frame = CGRect(origin: frame.origin, size: CGSize(width: frame.width, height: location.y ))
+            } else {
+                returnInitialPosition()
+            }
+        }
+    }
 }

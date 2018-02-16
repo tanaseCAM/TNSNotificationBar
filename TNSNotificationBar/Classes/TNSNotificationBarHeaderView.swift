@@ -45,6 +45,14 @@ class TNSNotificationBarHeaderView: UIView {
         return view
     }()
     
+    private let closeButton: UIButton = {
+        let view = UIButton(frame: .zero)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .clear
+        view.addTarget(self, action: #selector(tappedCloseButton), for: .touchUpInside)
+        return view
+    }()
+    
     override public init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -65,15 +73,19 @@ class TNSNotificationBarHeaderView: UIView {
             containerView.trailingAnchor.constraint(equalTo: trailingAnchor),
             containerView.heightAnchor.constraint(equalToConstant: 70),
             
-            messageAreaView.widthAnchor.constraint(equalToConstant: 200),
+            messageAreaView.widthAnchor.constraint(greaterThanOrEqualToConstant: 10),
             messageAreaView.heightAnchor.constraint(equalToConstant: 50),
             buttonAreaView.widthAnchor.constraint(equalToConstant: 60),
             buttonAreaView.heightAnchor.constraint(equalToConstant: 50),
             
             messageLabel.leadingAnchor.constraint(equalTo: messageAreaView.leadingAnchor, constant: 20),
-            messageLabel.trailingAnchor.constraint(equalTo: messageAreaView.trailingAnchor, constant: 20),
+            messageLabel.trailingAnchor.constraint(equalTo: messageAreaView.trailingAnchor, constant: -20),
             messageLabel.centerYAnchor.constraint(equalTo: messageAreaView.centerYAnchor)
         ])
+    }
+    
+    @objc private func tappedCloseButton() {
+        // TODO: 閉じるボタン
     }
     
 }

@@ -45,7 +45,7 @@ class TNSNotificationBarHeaderView: UIView {
         return view
     }()
     
-    private let closeButton: UIButton = {
+    private let expandOrCloseButton: UIButton = {
         let view = UIButton(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .clear

@@ -104,6 +104,10 @@ public class TNSNotificationBar: UIView {
 }
 
 extension TNSNotificationBar {
+    
+}
+
+extension TNSNotificationBar {
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             let location = touch.location(in: self)

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61881AC4203BB92100A3DFEB /* TNSNotificationBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61881AC3203BB92100A3DFEB /* TNSNotificationBarButton.swift */; };
+		61881AC6203BE99000A3DFEB /* TNSNotificationBarElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61881AC5203BE99000A3DFEB /* TNSNotificationBarElement.swift */; };
 		61917D2F2033DF03003FA60C /* TNSNotificationBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61917D252033DF02003FA60C /* TNSNotificationBar.framework */; };
 		61917D362033DF03003FA60C /* TNSNotificationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 61917D282033DF02003FA60C /* TNSNotificationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61917D412033DF88003FA60C /* TNSNotificationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61917D402033DF88003FA60C /* TNSNotificationBar.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		61881AC3203BB92100A3DFEB /* TNSNotificationBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TNSNotificationBarButton.swift; sourceTree = "<group>"; };
+		61881AC5203BE99000A3DFEB /* TNSNotificationBarElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TNSNotificationBarElement.swift; sourceTree = "<group>"; };
 		61917D252033DF02003FA60C /* TNSNotificationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TNSNotificationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61917D282033DF02003FA60C /* TNSNotificationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNSNotificationBar.h; sourceTree = "<group>"; };
 		61917D292033DF02003FA60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61881AC0203BB8F400A3DFEB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				61881AC3203BB92100A3DFEB /* TNSNotificationBarButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		61917D1B2033DF02003FA60C = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +113,12 @@
 		61917D3F2033DF22003FA60C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				61881AC0203BB8F400A3DFEB /* Components */,
 				61917D402033DF88003FA60C /* TNSNotificationBar.swift */,
 				61917DF8203408CF003FA60C /* TNSNotificationBarBodyView.swift */,
 				61917DFA20340980003FA60C /* TNSNotificationBarHeaderView.swift */,
 				61968B3A2035218A008DFEBB /* TNSNotificationBar+UIView.swift */,
+				61881AC5203BE99000A3DFEB /* TNSNotificationBarElement.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -253,9 +267,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				61917DF9203408CF003FA60C /* TNSNotificationBarBodyView.swift in Sources */,
+				61881AC6203BE99000A3DFEB /* TNSNotificationBarElement.swift in Sources */,
 				61917D412033DF88003FA60C /* TNSNotificationBar.swift in Sources */,
 				61917DFB20340980003FA60C /* TNSNotificationBarHeaderView.swift in Sources */,
 				61968B3B2035218A008DFEBB /* TNSNotificationBar+UIView.swift in Sources */,
+				61881AC4203BB92100A3DFEB /* TNSNotificationBarButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
